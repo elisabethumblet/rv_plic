@@ -29,6 +29,7 @@ always_comb begin
   resp_o.ready = 1'b1;
   resp_o.rdata = '0;
   resp_o.error = '0;
+  ip_re_o = '0;
   prio_o = '0;
   prio_we_o = '0;
   prio_re_o = '0;

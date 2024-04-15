@@ -83,6 +83,7 @@ class AddrMap:
     output += "  resp_o.ready = 1'b1;\n"
     output += "  resp_o.rdata = '0;\n"
     output += "  resp_o.error = '0;\n"
+    output += "  ip_re_o = '0;\n"
     for i in self.ports:
       if i[3] != Access.RO:
         output += "  {}_o = '0;\n".format(i[0])
